@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alan Wanglon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/mediascreen.css">
+ 
+    <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+
+    <!-- card -->
+    <link rel="stylesheet" href="./css/csscard.css">
+
+
+
+  </head>
+  <body>
+
+    <a href="#"><img src="imagem/seta-para-cima.png" alt="paracima" id="seta-volver"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+    <!-- Add icon of nad -->
+    <i class="fa-solid fa-bars" style="color: #e6324b;" onclick="openMenu()"></i>
+      
+    <header>
+      <img src="imagem/logo.png" alt="logo">
+      <nav>
+       <a href="#sobremim">Sobre Mim</a>
+       <a href="#conhecimento">Conhecimento</a>
+       <a href="#projetos">Projetos</a>
+       <a href="#contate" class="heartbeat" id="contact">Contate-me</a>
+       <i class="fa-solid fa-xmark" style="color: #353634;" onclick="closeMenu()"></i>
+      </nav>
+
+   
+    </header>
+    
+    <section  class="section-hello">
+
+      
+      <div class="container">
+        <div class="perfil--inicial">
+            <p class="paragrafo">Olá, eu sou</p>
+            <h1 id="name-title"class="titulo">Alan Wanglon!</h1>
+            <h1 class="paragrafo--02"><span id="dev">Desenvolvedor </span>Front-End</h1>
+        </div>
+
+        <div class="icons-contact">
+              <a href="https://github.com/AlanWanglon" target="_blank"><i class="fa-brands fa-linkedin" style="color:	#4F4F4F;"></i></a>
+              <a href="https://github.com/AlanWanglon target="_blank"><i class="fa-brands fa-github" style="color: 	#1E90FF;"></i></a>
+              
+       </div>
+      </div>
+      <img id="programacao" class="programacao slide-bottom" src="imagem/programação.jpg" alt="">   
+        
+
+   
+    </section>
+    <section  id="sobremim" class="section-aboutme">
+      <img data-animation="right" class="me" src="imagem/photo.png" alt="me" id="me"/>
+      <div class="text-container">
+        <h1 class="title" data-animation="left">Sobre mim</h1>
+        <p class="paragrafo" data-animation="left">
+          Atualmente, sou estudante de Engenharia da Computação e estou buscando minha primeira experiencia de trabalho como desenvolvedor.Com 22 anos de idade, sempre interessado por tecnologia, adquiri conhecimentos sólidos em HTML, CSS, Bootstrap, JavaScript, React e Python.
+          Convido você a conhecer alguns dos meus projetos pessoais abaixo... Sinta-se à vontade para dar uma olhada!
+        </p>
+       
+        <a id="curriculo" class="heartbeat" href="imagem/curriculum.pdf" Acme Docudata-animation="left" download="mentation (ver. 2.0.1).pdf">Download Currículo</a>
+      </div>
+     
+    </section>
+    <section  id="conhecimento"  class="section-skill">
+      <h1 class="paragrafo">Conhecimento</h1>
+
+    <div class="icon-skills">
+      <i class="fa-brands fa-html5 " data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-css3"  data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-square-js" data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-react" data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-github" data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-git"data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-bootstrap"data-animation="left" style="color: #184ee3;"></i>
+      <i class="fa-brands fa-python"data-animation="left" style="color: #184ee3;"></i>
+    </div>
+
+    </section>
+    <section id="projetos" class="section-projects">
+      <h1 class="paragrafo" style="color: white;">
+       Principais projetos
+      </h1>
+      <div class="card-projects">
+
+        <!-- Cards com projetos -->
+
+        <div class="container"  data-animation="right">
+          <img src="imgcard/museu.png" alt="Imagem" class="imagem">
+          <div class="overlay">
+            <h2>Museu Site</h2>
+            <p>Site simples desenvolvido em HTML, CSS .</p>
+            <div  class="icon-link">
+              <a href=" " target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href=" "  target="_blank" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-animation="left">
+          <img src="imgcard/balao.png" alt="Imagem" class="imagem">
+          <div class="overlay">
+            <h2>Parallax</h2>
+            <p>Site com Parallax com html e css.</p>
+            <div  class="icon-link">
+              <a href=" " target="_blank" class="card-link"><i class="fa-brands fa-github"></i></a>
+              <a href=" " target="_blank" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container"  data-animation="right">
+          <img src="imgcard/cidade.png" alt="Imagem" class="imagem">
+          <div class="overlay">
+            <h2>Noticias Cidade</h2>
+            <p>Página para conteudo jornalistico com html e css.</p>
+            <div  class="icon-link">
+              <a href=" " target="
+              " class="card-link"><i class="fa-brands fa-github"></i></a>
+              <a href=" " target="_blank" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container"  data-animation="right">
+          <img src="imgcard/game.png" alt="Imagem" class="imagem">
+          <div class="overlay">
+            <h2>Save earth</h2>
+            <p>Game desenvolvido com python usando pygame.</p>
+            <div  class="icon-link">
+              <a href=" " target="
+              " class="card-link"><i class="fa-brands fa-github"></i></a>
+              <a href=" " target="_blank" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+
+    </section>
+    <section id="contate" class="contact-me">
+      <h1 class="paragrafo"> Contate-me</h1>
+
+    
+        <form class="box-form" action="https://formsubmit.co/alanwanglon15@gmail.com" method="POST">
+        
+              <label aria-required="true" for="nome" name="nome" >Nome</label>
+              <input required  class="form-nome"  type="text" name="nome" />
+          
+              <label aria-required="true" for="email" name="email">E-mail</label>
+              <input type="email" required class="form-email" name="email"/>
+          
+              <label for="msg" aria-required="true" name="text">Mensagem</label>
+              <textarea id="texto" required rows="5" class="texto-contato" name="text"></textarea>
+              <button id="contatoForm" class="btn-contato heartbeat" type="submit" onclick="enviar()">Enviar</button>
+
+            </form>   
+          </div>
+         
+      </form>
+    </section>
+    <footer>
+      <div>
+          <span style="float: left; margin-top: 5px;"><a href="#"><img id="logo" src="imagem/logo4.png" style="width: 50px;" alt="logo"></a></span>
+          <span style="float: right; margin: 17px;"><p style="color: rgba(245, 245, 220, 0.458);">&copy; 2023 Alan Wanglon. All righs reserved.</p></span>
+      </div>
+  </footer>
+  
+   
+  </body>
+
+
+
+ 
+</html>
+<!--Fim-->

@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.container .imagem {
+  display: block;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.619);
+  /* max-width: 0%; */
+  height: auto;
+}
+.container #jokenpo {
+  width: 90%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+
+  width: 90%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.overlay p {
+  color: white;
+  padding: 10px;
+}
+.icon-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+.card-link {
+  color: white;
+}
+.card-link:hover {
+  color: #0000FF;
+}
+button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
