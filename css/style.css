@@ -107,7 +107,7 @@ header nav a:hover {
   border-radius: 4px;
 }
 #contact:hover {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: var(--color03);
   color: white;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.475);
 }
@@ -262,6 +262,7 @@ header nav a:hover {
 .section-projects {
   background-color: var(--color03);
   min-height: 100vh;
+  max-height: 200vh;
   height: 115vh;
   display: flex;
   flex-direction: column;
