@@ -1,6 +1,11 @@
-@media (max-width: 426px) {
+@media (max-width: 600px) {
   body {
     overflow-y: hidden;
+  }
+
+  header img {
+    width: 10%;
+    padding-top: 25px;
   }
   h1 {
     text-align: center;
