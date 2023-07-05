@@ -1,12 +1,41 @@
 function enviar() {
   var data = new Date();
   var hora = data.getHours();
+  var titulo = "";
+  var mensagem = "";
+
   if (hora < 12 && hora > 6) {
-    alert("Obrigada pelo seu contato. Excelente dia!!");
+    titulo = "Bom Dia";
+    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
+  } if (hora <= 18 && hora >= 13) {
+    titulo = "Boa Tarde";
+    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
   } else {
-    alert("Obrigada pelo seu contato. Excelente tarde!!");
+    titulo = "Boa Noite";
+    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
   }
+
+  Swal.fire({
+    title: titulo,
+    text: mensagem,
+    iconHtml: '<img src="imagem/logo4.png" style="border: none; box-shadow: none; align:">',
+    imageAlt: '<img src="imagem/branco.png">',
+    confirmButtonText: "OK"
+  }).then(function(result) {
+    if (result.isConfirmed) {
+      // Continuar com o envio do formulário
+      document.querySelector(".box-form").submit();
+    }
+  });
 }
+
+document.getElementById("contatoForm").addEventListener("click", function(event) {
+  event.preventDefault(); // Evitar que o formulário seja enviado imediatamente
+  enviar(); // Chamar a função enviar()
+});
+
+
+
 
 //FUNÇÃO SCROLL
 

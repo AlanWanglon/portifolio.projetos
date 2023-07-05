@@ -426,6 +426,28 @@ footer p {
   border-radius: 15px;
 }
 
+.swal2-popup {
+  background-color: transparent;
+  padding: 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.swal2-title,
+.swal2-content {
+  color: #000; /* Ajuste a cor do texto conforme necessário */
+}
+
+.swal2-confirm {
+  background-color: #00ff00;
+  color: #fff;
+}
+
+.swal2-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 
