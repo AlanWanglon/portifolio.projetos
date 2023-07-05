@@ -103,9 +103,10 @@ header nav a:hover {
   border-radius: 4px;
 }
 #contact {
-  border: 1px solid var(--color03);
+  border: 1px solid rgba(0, 0, 255, 0.5); /* Azul transparente */
   border-radius: 4px;
 }
+
 #contact:hover {
   background-color: var(--color03);
   color: white;
@@ -177,6 +178,11 @@ header nav a:hover {
   font-size: 2rem;
   cursor: pointer;
 }
+
+.icons-contact a {
+  text-decoration: none;
+}
+
 
 #name-title {
   max-width: 0;
