@@ -328,6 +328,12 @@ header nav a:hover {
   font-size: 1.5rem;
 }
 
+.github-icon {
+  margin-bottom: 5px;
+  padding-left: 40px;
+}
+
+
 .contact-me {
   min-height: 100vh;
   display: flex;
