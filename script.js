@@ -1,3 +1,4 @@
+//Form
 function enviar() {
   var data = new Date();
   var hora = data.getHours();
@@ -5,21 +6,20 @@ function enviar() {
   var mensagem = "";
 
   if (hora < 12 && hora > 6) {
-    titulo = "Bom Dia";
-    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
+    titulo = "Good morning";
+    mensagem = "We're almost there, solve the captcha and your email will be sent!";
   } if (hora <= 18 && hora >= 13) {
-    titulo = "Boa Tarde";
-    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
+    titulo = "Good Evening";
+    mensagem = "We're almost there, solve the captcha and your email will be sent!";
   } else {
-    titulo = "Boa Noite";
-    mensagem = "Estamos quase lá, resolva o captcha e seu e-mail será enviado!";
+    titulo = "Good night";
+    mensagem = "We're almost there, solve the captcha and your email will be sent!";
   }
 
   Swal.fire({
     title: titulo,
     text: mensagem,
-    iconHtml: '<img src="imagem/logo4.png" style="border: none; box-shadow: none; align:">',
-    imageAlt: '<img src="imagem/branco.png">',
+    
     confirmButtonText: "OK"
   }).then(function(result) {
     if (result.isConfirmed) {
