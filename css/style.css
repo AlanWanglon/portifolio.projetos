@@ -260,7 +260,8 @@ header nav a:hover {
 }
 
 .section-projects {
-  background-color: var(--color03);
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(21, 0, 128, 0.7));
+
   min-height: 100vh;
   max-height: 200vh;
   height: 115vh;
@@ -313,10 +314,7 @@ header nav a:hover {
   display: flex;
   gap: 15px;
 }
-.card-body a {
-  font-size: 1.2rem;
-  color: #e6324b;
-}
+
 .icon-link {
   display: flex;
   flex-direction: column;
@@ -454,7 +452,3 @@ footer p {
 }
 
 
-
-
-
-/* Barra de Rolagem *

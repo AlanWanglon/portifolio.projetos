@@ -166,3 +166,11 @@
     height: 60vh;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .section-projects {
+    background: url(../teste.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
