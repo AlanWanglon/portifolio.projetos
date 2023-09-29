@@ -93,8 +93,10 @@
   }
 }
 @media (max-width: 1200px) {
-  .paragrafo{
+  .test{
     padding: 60px;
+    margin-top: 80px;
+    
   }
 }
 @media (max-width: 780px) {
