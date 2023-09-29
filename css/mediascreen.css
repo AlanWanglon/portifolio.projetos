@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+  
+  .section-projects{
+    padding-bottom: 40px;
+  }
   body {
     overflow-y: hidden;
   }
@@ -88,12 +92,18 @@
     bottom: 3.5%;
   }
 }
+@media (max-width: 1200px) {
+  .paragrafo{
+    padding: 60px;
+  }
+}
 @media (max-width: 780px) {
   header img {
     position: absolute;
     left: 3rem;
     top: 3rem;
   }
+  
   header nav {
     position: fixed;
     top: 0px;
@@ -173,4 +183,5 @@
     background-position: center;
     background-size: 100%;
   }
+  
 }

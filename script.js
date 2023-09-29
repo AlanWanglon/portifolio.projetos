@@ -78,3 +78,4 @@ function closeMenu() {
   document.querySelector(".fa-xmark").style.transition =
     "background-color 0.3s ease-in-out";
 }
+
