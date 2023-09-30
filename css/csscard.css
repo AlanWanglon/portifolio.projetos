@@ -1,17 +1,218 @@
+.section-projects {
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(21, 0, 128, 0.7));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.749);
+}
+
+
+@media (max-width: 600px) {
+  
+  .section-projects{
+    padding-bottom: 40px;
+  }
+  body {
+    overflow-y: hidden;
+  }
+
+  header img {
+    width: 10%;
+    padding-top: 25px;
+  }
+  h1 {
+    text-align: center;
+  }
+  header nav {
+    display: none;
+  }
+  .section-hello {
+    flex-direction: column;
+  }
+  .section-hello img {
+    order: -1;
+    width: 50%;
+  }
+  .perfil--inicial {
+    width: 20rem;
+    margin-top: 4rem;
+  }
+
+  @keyframes escrever {
+    100% {
+      max-width: 95%;
+    }
+  }
+  .section-aboutme {
+    min-height: 95vh;
+  }
+  .section-aboutme img {
+    display: none;
+  }
+  .text-container {
+    width: 15rem;
+  }
+  .text-container p,
+  h1 {
+    width: 20rem;
+    padding-right: 5%;
+  }
+
+  #curriculo {
+    margin-right: 5%;
+  }
+  .section-skill {
+    height: 90vh;
+  }
+  .icon-skills {
+    width: 20rem;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+  
+  @media (min-width: 600px) {
+    .icon-skills {
+      justify-content: space-between;
+      gap: 80rem; /* Aumente o valor do gap para adicionar mais espaçamento */
+    }
+  }
+  .section-projects {
+    height: 400vh;
+    justify-content: space-evenly;
+  }
+
+  .contact-me {
+    height: 75vh;
+  }
+  form {
+    width: 21rem;
+  }
+  input,
+  textarea,
+  .btn-contato {
+    width: 20rem;
+  }
+  #seta-volver {
+    width: 5%;
+    bottom: 3.5%;
+  }
+}
+
+@media (max-width: 780px) {
+  header img {
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+  }
+  
+  header nav {
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0.5);
+    z-index: 1000;
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+  header nav a {
+    color: white;
+    z-index: 50000;
+    transition: 0.3s ease-in-out;
+  }
+  #contact {
+    border: #353634;
+    background-color: #353634;
+    border: #353634;
+    z-index: 10000;
+    transition: 0.3s ease-in-out;
+  }
+  nav .fa-mark {
+    display: none;
+    z-index: 80000;
+    color: #353634;
+    transition: all 0.5s;
+    transition: 0.3s ease-in-out;
+  }
+
+  body .fa-bars {
+    display: block;
+    transition: all 0.5s;
+  }
+
+  .section-hello {
+    flex-direction: column;
+  }
+  .perfil--inicial h1 {
+    text-align: left;
+  }
+  .section-hello img {
+    order: -1;
+    width: 25%;
+  }
+  .section-aboutme {
+    height: 90vh;
+  }
+  .text-container {
+    width: 25rem;
+  }
+  .section-projects {
+    min-height: 160vh;
+  }
+  .card-complet {
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .card-job {
+    margin: auto;
+    font-size: 1.2rem;
+    width: 5rem;
+  }
+  .contact-me {
+    justify-content: space-evenly;
+    height: 60vh;
+  }
+}
+
 .container {
   position: relative;
   display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
 }
+
 
 .container .imagem {
   display: block;
   border-radius: 10px;
   width: 90%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.619);
-  /* max-width: 0%; */
   height: auto;
 }
 
+.text-container {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+  justify-content: center;
+  text-align: end;
+  font-size: 1.2rem;
+}
 
 .overlay {
   position: absolute;
@@ -62,4 +263,64 @@ button {
   color: #000;
   border: none;
   cursor: pointer;
+}
+
+.card-projects {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.section-projects img {
+  width: 30%;
+}
+.card-complet {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.749);
+
+  background-color: #2b2b2b;
+  padding: 12px;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+.card-texts {
+  width: 14rem;
+  text-align: left;
+  color: white;
+}
+.card-job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 1.2rem;
+  color: white;
+}
+.card-body {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-projects {
+    background: url(../teste.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+  }
+  
 }
