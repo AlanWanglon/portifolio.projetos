@@ -173,6 +173,10 @@ header nav a:hover {
 .icons-contact a {
   text-decoration: none;
 }
+.marg:hover {
+  transform: scale(1.02); /* Aplica a escala ao elemento quando o mouse passa por cima */
+  transition: transform 0.4s; /* Adiciona uma transição suave à propriedade transform */
+}
 
 
 #name-title {

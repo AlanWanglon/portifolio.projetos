@@ -1,5 +1,5 @@
 .section-projects {
-  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(21, 0, 128, 0.7));
+  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(21, 0, 128, 0.5));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,11 +7,15 @@
   justify-content: center;
   justify-content: space-evenly;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.749);
-  padding-bottom: 40px;
+  padding-bottom: 6%;
 }
 
 
 @media (max-width: 600px) {
+  .test {
+    margin-bottom: 4%;
+    margin-top: 6%;
+  }
   
   .section-projects{
     padding-bottom: 40px;
@@ -83,6 +87,10 @@
       justify-content: space-between;
       gap: 80rem; /* Aumente o valor do gap para adicionar mais espaçamento */
     }
+  }
+
+  .marg {
+    margin-left: 10%; 
   }
   .section-projects {
     justify-content: space-evenly;
@@ -307,9 +315,10 @@ button {
   gap: 15px;
 }
 
+
 .icon-link {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -321,6 +330,14 @@ button {
     background-position: center;
     background-size: 100%;
     display: flex;
+  }
+  
+}
+
+@media (min-width: 1600px) {
+  .test {
+    margin-bottom: 8%;
+    margin-top: 10%;
   }
   
 }
