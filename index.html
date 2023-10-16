@@ -12,18 +12,43 @@
  
     <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
     
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
 
     <!-- card -->
     <link rel="stylesheet" href="./css/csscard.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
   </head>
   <body>
 
-    <a href="#"><img src="imagem/seta-para-cima.png" alt="paracima" id="seta-volver"></a>
+    <a href="#"><svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="triangles">
+        <g id="lightGroup">
+          <path
+            id="light1"
+            opacity="0.6"
+            d="M53.4872 46.3509C55.7436 47.6536 55.7436 50.9105 53.4872 52.2132L13.718 75.174C11.4615 76.4767 8.64104 74.8483 8.64104 72.2428L8.64104 26.3213C8.64104 23.7158 11.4616 22.0874 13.718 23.3901L53.4872 46.3509Z"
+          />
+        </g>
+        <g id="darkGroup">
+          <path
+            id="dark1"
+            opacity="0.8"
+            d="M74.9231 46.915C77.1795 48.2177 77.1795 51.4746 74.9231 52.7773L34.3077 76.2266C32.0513 77.5294 29.2308 75.9009 29.2308 73.2955L29.2308 26.3968C29.2308 23.7914 32.0513 22.1629 34.3077 23.4657L74.9231 46.915Z"
+          />
+          <path
+            id="dark2"
+            opacity="0.8"
+            d="M54.6154 46.915C56.8718 48.2177 56.8718 51.4746 54.6154 52.7773L14 76.2266C11.7436 77.5294 8.92307 75.9009 8.92307 73.2955L8.92308 26.3968C8.92308 23.7914 11.7436 22.1629 14 23.4657L54.6154 46.915Z"
+          />
+        </g>
+      </g>
+    </svg></a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
 
@@ -110,7 +135,7 @@
             <h2>Site para Engenheiro</h2>
             <p>Desenvolvimento e deploy do site feito em  html, css e JavaScript.</p>
             <div  class="icon-link">
-              <a href="https://github.com/AlanWanglon/chale-hotel"  target="_blank"  class="card-link"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/AlanWanglon/tecblog"target="_blank" class="card-link"><i class="fas fa-info-circle info-icon" id="info-icon"></i></a>
               <a href="https://jasperaengineer.com/"  target="_blank"  class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
@@ -212,7 +237,7 @@
 
 
     </section>
-    <section id="contate" class="contact-me">
+    <section id="contate" class="contact-me" data-aos="fade-down" data-aos-duration="1500">
       <h1 class="paragrafo"> Contate-me</h1>
       <div class="icons-contact">
         <span>
@@ -261,6 +286,8 @@
           <span style="float: right; margin: 17px;"><p style="color: rgba(245, 245, 220, 0.458);">&copy; 2023 Alan Wanglon. All rights reserved.</p></span>
       </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   
    
   </body>

@@ -5,6 +5,8 @@
   --color01: black;
   --color02: #1C1C1C;
   --color03:#0000FF ;
+  --dark-color: #635bff;
+  --light-color: #80e9ff;
   --font01: "Sono", sans-serif;
 }
 * {
@@ -280,7 +282,7 @@ input {
   padding: 10px;
   outline: none;
   border-radius: 4px;
-  border: 2px solid var(--color03);
+  border: 2px solid #3a86ff;
 }
  .form-nome{
   text-transform: capitalize;
@@ -289,7 +291,7 @@ input {
 textarea {
   width: 30rem;
   margin-bottom: 1.5rem;
-  border: 2px solid var(--color03);
+  border: 2px solid #3a86ff;
   border-radius: 4px;
   resize: none;
   outline: none;
@@ -303,7 +305,7 @@ textarea {
   padding: 10px;
   border-radius: 4px;
   border: none;
-  background-color: var(--color03);
+  background-color: #3a86ff;
   color: white;
   cursor: pointer;
 }
@@ -378,6 +380,40 @@ footer p {
 
 .info-icon {
   cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index:2000;
+}
+
+#darkGroup {
+  fill: var(--dark-color);
+}
+#lightGroup {
+  fill: var(--light-color);
+}
+#dark1,
+#light1,
+#dark2 {
+  transition: all 1s ease;
+}
+#dark2 {
+  transform: translateX(-100%);
+}
+svg:hover #light1 {
+  transform: translateX(20%);
+}
+svg:hover #dark1 {
+  transform: translateX(40%);
+  opacity: 0;
+}
+svg:hover #dark2 {
+  transform: translateX(0%);
 }
 
 
