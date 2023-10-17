@@ -17,6 +17,11 @@
     margin-top: 6%;
   }
   
+  svg {
+    scale: 0.9;
+    bottom: 1rem;
+    right: 1%;
+  }
   .section-projects{
     padding-bottom: 40px;
   }
